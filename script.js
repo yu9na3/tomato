@@ -40,7 +40,7 @@ function displayRecords() {
   const ul = document.createElement('ul');
   records.forEach(record => {
     const li = document.createElement('li');
-    li.textContent = `${record.date} - <span class="math-inline">\{record\.variety\} \(</span>{record.plantCount}株) - ${record.height}cm`;
+    li.textContent = `${record.date} - ${record.variety} (${record.plantCount}株) - ${record.height}cm`;
     ul.appendChild(li);
   });
   recordListDiv.appendChild(ul);
